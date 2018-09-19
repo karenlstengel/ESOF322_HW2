@@ -2,7 +2,7 @@ public class InsertionSort implements IMathSort {
 
     @Override
     public int[] mathSort(int array[]){
-        System.out.println("\nInsertion Sort!");
+        System.out.println("\n\tInsertion Sort!");
 
         //create and fill a new array with the values of array
         int[] tempArr = new int[array.length];
@@ -28,6 +28,7 @@ public class InsertionSort implements IMathSort {
 
     @Override
     public void printArray(int[] array){
+        System.out.print("\t");
         for(int i = 0; i < array.length; i++){
             System.out.print(array[i] + " ");
         }

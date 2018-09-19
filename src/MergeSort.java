@@ -2,7 +2,7 @@ public class MergeSort implements IMathSort {
 
     @Override
     public int[] mathSort(int[] array) {
-        System.out.println("\nMerge Sort!");
+        System.out.println("\n\tMerge Sort!");
 
         //array = mergeSort(array, 0, array.length/2, array.length/2 + 1);
         array = sort(array, 0, array.length);
@@ -66,6 +66,7 @@ public class MergeSort implements IMathSort {
 
     @Override
     public void printArray(int[] array){
+        System.out.print("\t");
         for(int i = 0; i < array.length; i++){
             System.out.print(array[i] + " ");
         }

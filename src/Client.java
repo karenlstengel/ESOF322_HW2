@@ -10,7 +10,12 @@ public class Client {
         Mathematica mathematica = new Mathematica();
 
         //client running
+        int[] mathematicaArr = mathematica.ms.mathSort(testArr);
+        mathematica.ms.printArray(mathematicaArr);
 
         //dynamic client
+        mathematica.setSortStrategy(new BubbleSort());
+        mathematicaArr = mathematica.ms.mathSort(testArr);
+        mathematica.ms.printArray(mathematicaArr);
     }
 }

@@ -1,7 +1,7 @@
 public abstract class MathProgram{
 
     public IMathSort ms;
-    public void setSortStrategy(){
-
+    public void setSortStrategy(IMathSort ims){
+        ms = ims;
     }
 }

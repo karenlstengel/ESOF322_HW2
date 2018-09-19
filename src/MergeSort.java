@@ -9,7 +9,7 @@ public class MergeSort implements IMathSort {
         return array;
     }
 
-    public int[] mergeSort(int[] array, int m, int n, int r){
+    public void mergeSort(int[] array, int m, int n, int r){
         int sub1 = n - m + 1;
         int sub2 = r - n;
 
@@ -19,11 +19,12 @@ public class MergeSort implements IMathSort {
         for(int i = 0; i < sub1; i++){
             lSub[i] = array[m + i];
         }
-        for(int i = 0; i < sub2; i++){
-            rSub[i] = array[n + 1 + i];
+        for(int j = 0; j < sub2; ++j){
+            rSub[j] = array[n + 1 + j];
         }
 
-        int i = 0; int j = 0;
+        int i = 0;
+        int j = 0;
         int k = 1;
 
         while(i < sub1 && j < sub2){
@@ -49,7 +50,6 @@ public class MergeSort implements IMathSort {
             k++;
         }
 
-        return array;
     }
 
     public int[] sort(int array[], int l, int r){

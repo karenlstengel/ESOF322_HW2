@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8cae367-ffa1-4b1f-9893-caa850d57462" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/ESOF322_HW2/MergeSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MergeSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,8 +17,10 @@
     <session id="-752885890">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -32,12 +35,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1141" />
+          <entry key="java" value="1180" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1141" />
+          <entry key="JAVA" value="1180" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -57,13 +60,16 @@
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ESOF322_HW2" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+            <state relative-caret-position="119">
+              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -89,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="119">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -141,8 +147,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/BubbleSort.java" />
         <option value="$PROJECT_DIR$/src/InsertionSort.java" />
-        <option value="$PROJECT_DIR$/src/Client.java" />
         <option value="$PROJECT_DIR$/src/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/Client.java" />
       </list>
     </option>
   </component>
@@ -157,32 +163,14 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ESOF322_HW2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ESOF322_HW2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ESOF322_HW2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ESOF322_HW2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537414071643" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537414607202" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -231,6 +219,15 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="166" width="1616" height="916" extended-state="6" />
     <editor active="true" />
@@ -242,16 +239,17 @@
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" weight="0.32969153" />
-      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Favorites" order="7" side_tool="true" weight="0.32969153" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.4993573" weight="0.32992327" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7840708" visible="true" weight="0.2736573" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.71979433" visible="true" weight="0.2736573" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.69731545" weight="0.304698" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.30268458" side_tool="true" weight="0.304698" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32992327" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6973008" weight="0.30306906" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28020567" side_tool="true" visible="true" weight="0.2736573" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" weight="0.3299566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -271,6 +269,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="out of bounds error in merge sort" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IMathSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BubbleSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -278,7 +290,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/InsertionSort.java">
+    <entry file="file://$PROJECT_DIR$/src/Mathematica.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
@@ -299,24 +311,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IMathSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="119">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
         </state>
       </provider>
     </entry>

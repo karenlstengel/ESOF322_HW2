@@ -28,6 +28,9 @@ public class Client {
         mathematicaArr = mathematica.ms.mathSort(testArr);
         mathematica.ms.printArray(mathematicaArr);
 
+        int tempArr[] = new int[] {10, 3, 5, 7, 8, 2, 4, 7, 9, 11, 12, 1};
+        testArr = tempArr;
+
         /**MTool*/
         //create client
         System.out.println("MTool");
@@ -38,8 +41,8 @@ public class Client {
         mtool.ms.printArray(testArr);
 
         //MTool running on default
-        //int[] mtoolArr = mtool.ms.mathSort(testArr); //merge sort
-        //mtool.ms.printArray(mtoolArr);
+        int[] mtoolArr = mtool.ms.mathSort(testArr); //merge sort
+        mtool.ms.printArray(mtoolArr);
 
         //dynamic MTool
         mtool.setSortStrategy(new BubbleSort());

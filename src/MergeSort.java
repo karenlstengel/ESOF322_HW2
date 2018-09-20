@@ -5,7 +5,7 @@ public class MergeSort implements IMathSort {
         System.out.println("\n\tMerge Sort!");
 
         //array = mergeSort(array, 0, array.length/2, array.length/2 + 1);
-        array = sort(array, 0, array.length - 1);
+        sort(array, 0, array.length - 1);
         return array;
     }
 

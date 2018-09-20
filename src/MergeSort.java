@@ -4,8 +4,6 @@ public class MergeSort implements IMathSort {
     public int[] mathSort(int[] array) {
         System.out.println("\n\tMerge Sort!");
 
-        //array = mergeSort(array, 0, array.length/2, array.length/2 + 1);
-        //sort(array, 0, array.length - 1);
         array = mergeSort(array);
         return array;
     }

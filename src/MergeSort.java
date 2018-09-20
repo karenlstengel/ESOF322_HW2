@@ -5,65 +5,71 @@ public class MergeSort implements IMathSort {
         System.out.println("\n\tMerge Sort!");
 
         //array = mergeSort(array, 0, array.length/2, array.length/2 + 1);
-        sort(array, 0, array.length - 1);
+        //sort(array, 0, array.length - 1);
+        array = mergeSort(array);
         return array;
     }
 
-    public int[] mergeSort(int[] array, int head_index, int middle_index, int tail_index){
-        int sub1_size = middle_index - head_index + 1;
-        int sub2_size = tail_index - middle_index;
+    // Places the elements of the given array into sorted order
+    // using the merge sort algorithm.
+    // post: array is in sorted (nondecreasing) order
+    public static int[] mergeSort(int[] array) {
+        if (array.length > 1) {
+            // split array into two halves
+            int[] left = leftHalf(array);
+            int[] right = rightHalf(array);
 
-        int sub1[] = new int [sub1_size];
-        int sub2[] = new int [sub2_size];
+            // recursively sort the two halves
+            mergeSort(left);
+            mergeSort(right);
 
-        for(int i = 0; i < sub1_size; ++i){
-            sub1[i] = array[head_index + i];
+            // merge the sorted halves into a sorted whole
+            merge(array, left, right);
         }
-        for(int j = 0; j < sub2_size; ++j){
-            sub2[j] = array[middle_index + 1 + j];
+        return array;
+    }
+
+    // Returns the first half of the given array.
+    public static int[] leftHalf(int[] array) {
+        int size1 = array.length / 2;
+        int[] left = new int[size1];
+        for (int i = 0; i < size1; i++) {
+            left[i] = array[i];
         }
+        return left;
+    }
 
-        int sub1_head = 0;
-        int sub2_head = 0;
-        int merged_sub = 1;
+    // Returns the second half of the given array.
+    public static int[] rightHalf(int[] array) {
+        int size1 = array.length / 2;
+        int size2 = array.length - size1;
+        int[] right = new int[size2];
+        for (int i = 0; i < size2; i++) {
+            right[i] = array[i + size1];
+        }
+        return right;
+    }
 
-        while(sub1_head < sub1_size && sub2_head < sub2_size){
-            if(sub1[sub1_head] <= sub2[sub2_head]){
-                array[merged_sub] = sub2[sub2_head];
-                sub2_head++;
-            }else{
-                array[merged_sub] = sub1[sub1_head];
-                sub1_head++;
+    // Merges the given left and right arrays into the given
+    // result array.  Second, working version.
+    // pre : result is empty; left/right are sorted
+    // post: result contains result of merging sorted lists;
+    public static void merge(int[] result,
+                             int[] left, int[] right) {
+        int i1 = 0;   // index into left array
+        int i2 = 0;   // index into right array
+
+        for (int i = 0; i < result.length; i++) {
+            if (i2 >= right.length || (i1 < left.length &&
+                    left[i1] <= right[i2])) {
+                result[i] = left[i1];    // take from left
+                i1++;
+            } else {
+                result[i] = right[i2];   // take from right
+                i2++;
             }
-            merged_sub++;
         }
-
-        while(sub1_head < sub1_size){
-            array[merged_sub] = sub1[sub1_head];
-            sub1_head++;
-            merged_sub++;
-        }
-
-        while(sub2_head < sub2_size){
-            array[merged_sub] = sub2[sub2_head];
-            sub2_head++;
-            merged_sub++;
-        }
-        return array;
     }
-
-    public void sort(int array[], int head_index, int tail_index){
-        if(head_index < tail_index){
-            int middle_index = (head_index + tail_index)/2;
-
-            sort(array, head_index, middle_index);
-            sort(array,middle_index + 1, tail_index);
-
-            mergeSort(array, head_index, middle_index, tail_index);
-        }
-        //return mergedArray;
-    }
-
     @Override
     public void printArray(int[] array){
         System.out.print("\t");

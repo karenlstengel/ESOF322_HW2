@@ -9,59 +9,59 @@ public class MergeSort implements IMathSort {
         return array;
     }
 
-    public void mergeSort(int[] array, int m, int n, int r){
-        int sub1 = n - m + 1;
-        int sub2 = r - n;
+    public int[] mergeSort(int[] array, int head_index, int middle_index, int tail_index){
+        int sub1_size = middle_index - head_index + 1;
+        int sub2_size = tail_index - middle_index;
 
-        int lSub[] = new int [sub1];
-        int rSub[] = new int [sub2];
+        int sub1[] = new int [sub1_size];
+        int sub2[] = new int [sub2_size];
 
-        for(int i = 0; i < sub1; i++){
-            lSub[i] = array[m + i];
+        for(int i = 0; i < sub1_size; ++i){
+            sub1[i] = array[head_index + i];
         }
-        for(int j = 0; j < sub2; ++j){
-            rSub[j] = array[n + 1 + j];
+        for(int j = 0; j < sub2_size; ++j){
+            sub2[j] = array[middle_index + 1 + j];
         }
 
-        int i = 0;
-        int j = 0;
-        int k = 1;
+        int sub1_head = 0;
+        int sub2_head = 0;
+        int merged_sub = 1;
 
-        while(i < sub1 && j < sub2){
-            if(lSub[i] <= rSub[j]){
-                array[k] = lSub[i];
-                i++;
+        while(sub1_head < sub1_size && sub2_head < sub2_size){
+            if(sub1[sub1_head] <= sub2[sub2_head]){
+                array[merged_sub] = sub2[sub2_head];
+                sub2_head++;
             }else{
-                array[k] = rSub[j];
-                j++;
+                array[merged_sub] = sub1[sub1_head];
+                sub1_head++;
             }
-            k++;
+            merged_sub++;
         }
 
-        while(i < sub1){
-            array[k] = lSub[i];
-            i++;
-            k++;
+        while(sub1_head < sub1_size){
+            array[merged_sub] = sub1[sub1_head];
+            sub1_head++;
+            merged_sub++;
         }
 
-        while(j < sub2){
-            array[k] = rSub[j];
-            j++;
-            k++;
-        }
-
-    }
-
-    public int[] sort(int array[], int l, int r){
-        if(l < r){
-            int m = (l+r)/2;
-
-            sort(array, l, m);
-            sort(array, m+1, r);
-
-            mergeSort(array, l, m, r);
+        while(sub2_head < sub2_size){
+            array[merged_sub] = sub2[sub2_head];
+            sub2_head++;
+            merged_sub++;
         }
         return array;
+    }
+
+    public void sort(int array[], int head_index, int tail_index){
+        if(head_index < tail_index){
+            int middle_index = (head_index + tail_index)/2;
+
+            sort(array, head_index, middle_index);
+            sort(array,middle_index + 1, tail_index);
+
+            mergeSort(array, head_index, middle_index, tail_index);
+        }
+        //return mergedArray;
     }
 
     @Override

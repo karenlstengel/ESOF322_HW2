@@ -38,8 +38,8 @@ public class Client {
         mtool.ms.printArray(testArr);
 
         //MTool running on default
-        int[] mtoolArr = mtool.ms.mathSort(testArr); //merge sort
-        mtool.ms.printArray(mtoolArr);
+        //int[] mtoolArr = mtool.ms.mathSort(testArr); //merge sort
+        //mtool.ms.printArray(mtoolArr);
 
         //dynamic MTool
         mtool.setSortStrategy(new BubbleSort());

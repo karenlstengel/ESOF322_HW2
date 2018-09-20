@@ -10,6 +10,7 @@ public class MergeSort implements IMathSort {
         return array;
     }
 
+    //**This program retrieved from "https://www.buildingjavaprograms.com/code-files/3ed/ch13/MergeSort.java" for ease of implementation**
     // Places the elements of the given array into sorted order
     // using the merge sort algorithm.
     // post: array is in sorted (nondecreasing) order
